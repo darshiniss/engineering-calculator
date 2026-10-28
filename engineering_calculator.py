@@ -1,42 +1,28 @@
+A beginner-friendly Python project for performing basic electrical calculations.
+- Calculate voltage using Ohm's law
+- Calculate current
+- Calculate resistance
+- Calculate electrical power
+- Handle zero resistance or current where division would be undefined
 
-def engineering_calculator():
-    print("=== Engineering Calculator ===")
-    print("1. Calculate Voltage")
-    print("2. Calculate Current")
-    print("3. Calculate Resistance")
-    print("4. Calculate Power")
+- Python
+- Conditional statements
+- User input and arithmetic operations
 
-    choice = input("Choose an option (1-4): ")
+To run
+1. Make sure Python 3 is installed.
+2. Open a terminal in the project folder.
+3. Run python3 engineering_calculator.py
+4. Select a calculation and enter the required values.
 
-    if choice == "1":
-        current = float(input("Enter current (A): "))
-        resistance = float(input("Enter resistance (ohms): "))
-        print("Voltage =", current * resistance, "V")
+Things i learnt
+- Applying electrical formulas in Python
+- Using functions and conditional statements
+- Handling basic invalid inputs
 
-    elif choice == "2":
-        voltage = float(input("Enter voltage (V): "))
-        resistance = float(input("Enter resistance (ohms): "))
-        if resistance == 0:
-            print("Resistance cannot be zero.")
-        else:
-            print("Current =", voltage / resistance, "A")
-
-    elif choice == "3":
-        voltage = float(input("Enter voltage (V): "))
-        current = float(input("Enter current (A): "))
-        if current == 0:
-            print("Current cannot be zero.")
-        else:
-            print("Resistance =", voltage / current, "ohms")
-
-    elif choice == "4":
-        voltage = float(input("Enter voltage (V): "))
-        current = float(input("Enter current (A): "))
-        print("Power =", voltage * current, "W")
-
-    else:
-        print("Invalid option. Choose from 1 to 4.")
+Things that can be improved
+- Add more electrical formulas
+- Improve input validation
+- Create a graphical user interface
 
 
-if __name__ == "__main__":
-    engineering_calculator()
