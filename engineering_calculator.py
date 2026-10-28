@@ -1,28 +1,47 @@
-A beginner-friendly Python project for performing basic electrical calculations.
-- Calculate voltage using Ohm's law
+
+# Engineering Calculator ⚡
+
+A beginner-friendly Python project for performing basic electrical calculations using Ohm's law and electrical power formulas.
+
+## Features
+- Calculate voltage
 - Calculate current
 - Calculate resistance
 - Calculate electrical power
-- Handle zero resistance or current where division would be undefined
+- Handle division-by-zero cases
 
-- Python
-- Conditional statements
-- User input and arithmetic operations
+## Technologies Used
+- Python 3
+- Functions and conditional statements
+- Basic arithmetic operations
 
-To run
-1. Make sure Python 3 is installed.
-2. Open a terminal in the project folder.
-3. Run python3 engineering_calculator.py
-4. Select a calculation and enter the required values.
+## How to Run
+1. Install Python 3.
+2. Download or clone this repository.
+3. Open Terminal in the project folder.
+4. Run:
 
-Things i learnt
-- Applying electrical formulas in Python
-- Using functions and conditional statements
-- Handling basic invalid inputs
+```bash
+python3 engineering_calculator.py
+```
 
-Things that can be improved
+## Example
+Choose option 1 to calculate voltage.
+
+Input:
+- Current: 2 A
+- Resistance: 10 ohms
+
+Output:
+- Voltage: 20 V
+
+## What I Learned
+- Applying electrical formulas using Python
+- Writing functions and conditional statements
+- Handling invalid calculations
+
+## Future Improvements
 - Add more electrical formulas
 - Improve input validation
-- Create a graphical user interface
-
+- Build a graphical interface
 
