@@ -1,47 +1,42 @@
 
-# Engineering Calculator ⚡
+def engineering_calculator():
+    print("=== Engineering Calculator ===")
+    print("1. Calculate Voltage")
+    print("2. Calculate Current")
+    print("3. Calculate Resistance")
+    print("4. Calculate Power")
 
-A beginner-friendly Python project for performing basic electrical calculations using Ohm's law and electrical power formulas.
+    choice = input("Choose an option (1-4): ")
 
-## Features
-- Calculate voltage
-- Calculate current
-- Calculate resistance
-- Calculate electrical power
-- Handle division-by-zero cases
+    if choice == "1":
+        current = float(input("Enter current (A): "))
+        resistance = float(input("Enter resistance (ohms): "))
+        print("Voltage =", current * resistance, "V")
 
-## Technologies Used
-- Python 3
-- Functions and conditional statements
-- Basic arithmetic operations
+    elif choice == "2":
+        voltage = float(input("Enter voltage (V): "))
+        resistance = float(input("Enter resistance (ohms): "))
+        if resistance == 0:
+            print("Resistance cannot be zero.")
+        else:
+            print("Current =", voltage / resistance, "A")
 
-## How to Run
-1. Install Python 3.
-2. Download or clone this repository.
-3. Open Terminal in the project folder.
-4. Run:
+    elif choice == "3":
+        voltage = float(input("Enter voltage (V): "))
+        current = float(input("Enter current (A): "))
+        if current == 0:
+            print("Current cannot be zero.")
+        else:
+            print("Resistance =", voltage / current, "ohms")
 
-```bash
-python3 engineering_calculator.py
-```
+    elif choice == "4":
+        voltage = float(input("Enter voltage (V): "))
+        current = float(input("Enter current (A): "))
+        print("Power =", voltage * current, "W")
 
-## Example
-Choose option 1 to calculate voltage.
+    else:
+        print("Invalid option.")
 
-Input:
-- Current: 2 A
-- Resistance: 10 ohms
 
-Output:
-- Voltage: 20 V
-
-## What I Learned
-- Applying electrical formulas using Python
-- Writing functions and conditional statements
-- Handling invalid calculations
-
-## Future Improvements
-- Add more electrical formulas
-- Improve input validation
-- Build a graphical interface
-
+if __name__ == "__main__":
+    engineering_calculator()
